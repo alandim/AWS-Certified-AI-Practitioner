@@ -1,0 +1,974 @@
+## 🤖 Fundamentos de IA e Machine Learning
+
+<h3><strong style='color: skyblue'>1️⃣ Inteligência Artificial — IA</strong></h3>
+
+<p align="justify"><strong>Inteligência Artificial (IA)</strong> é o campo da computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam capacidades humanas, como reconhecer padrões, compreender linguagem, tomar decisões e resolver problemas.</p>
+
+### 🧠 Exemplos
+
+- Reconhecimento facial.
+- Assistentes virtuais.
+- Tradução automática.
+- Recomendação de produtos.
+- Detecção de fraude.
+- Geração de texto e imagens.
+
+> **DECORA:** IA é o **campo amplo**. ML, aprendizado profundo e IA generativa são abordagens dentro desse campo.
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣ Machine Learning — ML</strong></h3>
+
+<p align="justify"><strong>Machine Learning (ML)</strong> é uma área da IA em que os sistemas aprendem padrões a partir de dados para realizar previsões ou tomar decisões, sem que todas as regras sejam explicitamente programadas.</p>
+
+```text
+              IA
+               │
+              ML
+               │
+       Aprende com dados
+               │
+        ┌──────┴──────┐
+        ▼             ▼
+   Classificação   Previsão
+```
+
+### 🧠 Exemplo
+
+Em vez de programar manualmente:
+
+```text
+SE e-mail contém "ganhe dinheiro"
+E contém muitos links
+E remetente é desconhecido
+→ SPAM
+```
+
+Um modelo de ML pode aprender padrões a partir de milhares de exemplos de e-mails classificados como **spam** ou **não spam**.
+
+> **AZURE/AWS:** ML = **aprende padrões a partir de dados**.
+
+---
+
+<h3><strong style='color: skyblue'>3️⃣ Aprendizado profundo — Deep Learning</strong></h3>
+
+<p align="justify"><strong>Deep Learning</strong> é uma abordagem de Machine Learning baseada principalmente em <strong>redes neurais com múltiplas camadas</strong>.</p>
+
+É especialmente importante para tarefas complexas envolvendo grandes volumes de dados, como:
+
+- Imagens.
+- Áudio.
+- Vídeo.
+- Texto.
+- Linguagem natural.
+
+```text
+Machine Learning
+       │
+       └── Deep Learning
+               │
+               └── Redes neurais profundas
+```
+
+> **DECORA:**  
+> **Deep Learning ⊂ Machine Learning ⊂ IA**
+
+---
+
+<h3><strong style='color: skyblue'>4️⃣ Redes neurais</strong></h3>
+
+<p align="justify">Uma <strong>rede neural</strong> é um modelo computacional inspirado de forma simplificada no funcionamento de redes de neurônios biológicos. Ela possui camadas de unidades que transformam os dados de entrada para produzir uma saída.</p>
+
+```text
+Entrada          Camadas           Saída
+
+Dados ───────► [● ● ●] ───────► [● ●] ───────► Resultado
+               [● ● ●]           [● ●]
+               [● ● ●]
+```
+
+### 🧠 Exemplo
+
+Para reconhecer um gato em uma imagem:
+
+```text
+Imagem
+  ↓
+Características visuais
+  ↓
+Padrões mais complexos
+  ↓
+Modelo
+  ↓
+"Gato"
+```
+
+> **PEGADINHA:** Rede neural é uma **técnica/modelo** de ML. Deep Learning normalmente utiliza redes neurais com várias camadas.
+
+---
+
+<h3><strong style='color: skyblue'>5️⃣ Visão computacional — Computer Vision</strong></h3>
+
+<p align="justify"><strong>Visão computacional</strong> permite que sistemas de IA processem e interpretem informações visuais, como imagens e vídeos.</p>
+
+### Exemplos
+
+- Detecção de objetos.
+- Reconhecimento facial.
+- Classificação de imagens.
+- OCR.
+- Análise de imagens médicas.
+- Identificação de características em vídeos.
+
+> **DECORA:**  
+> **Computer Vision → imagens e vídeos**
+
+---
+
+<h3><strong style='color: skyblue'>6️⃣ Processamento de Linguagem Natural — PLN/NLP</strong></h3>
+
+<p align="justify"><strong>Processamento de Linguagem Natural (PLN/NLP)</strong> é a área da IA voltada para a compreensão e processamento da linguagem humana.</p>
+
+### Exemplos
+
+- Tradução.
+- Análise de sentimentos.
+- Classificação de textos.
+- Reconhecimento de fala.
+- Chatbots.
+- Resumo de documentos.
+- Perguntas e respostas.
+
+> **DECORA:**  
+> **NLP/PLN → linguagem humana**
+
+---
+
+<h3><strong style='color: skyblue'>7️⃣ Modelo de IA</strong></h3>
+
+<p align="justify">Um <strong>modelo</strong> é uma representação matemática/computacional que foi treinada para reconhecer padrões nos dados e produzir resultados a partir de novas entradas.</p>
+
+```text
+Dados de treinamento
+        ↓
+     Treinamento
+        ↓
+      MODELO
+        ↓
+Novos dados
+        ↓
+    Inferência
+        ↓
+    Resultado
+```
+
+> **DECORA:**  
+> **Modelo = aquilo que aprendeu os padrões dos dados.**
+
+---
+
+<h3><strong style='color: skyblue'>8️⃣ Algoritmo</strong></h3>
+
+<p align="justify">Um <strong>algoritmo</strong> é um conjunto de instruções ou procedimentos utilizados para resolver um problema ou realizar uma tarefa.</p>
+
+No ML, algoritmos podem ser utilizados para encontrar padrões nos dados e construir modelos.
+
+### Exemplo
+
+```text
+Dados
+  ↓
+Algoritmo de ML
+  ↓
+Treinamento
+  ↓
+Modelo
+```
+
+> **PEGADINHA:**  
+> **Algoritmo ≠ Modelo**
+>
+> **Algoritmo** = método/procedimento utilizado.  
+> **Modelo** = resultado treinado que pode fazer previsões ou gerar resultados.
+
+---
+
+<h3><strong style='color: skyblue'>9️⃣ Treinamento — Training</strong></h3>
+
+<p align="justify"><strong>Treinamento</strong> é o processo no qual o modelo aprende padrões a partir dos dados fornecidos.</p>
+
+```text
+Dados
+  ↓
+Treinamento
+  ↓
+Modelo aprende padrões
+  ↓
+Modelo treinado
+```
+
+Durante o treinamento, os parâmetros do modelo são ajustados para melhorar seu desempenho na tarefa.
+
+---
+
+<h3><strong style='color: skyblue'>🔟 Inferência — Inference</strong></h3>
+
+<p align="justify"><strong>Inferência</strong> é o uso de um modelo treinado para produzir uma previsão, classificação, decisão ou outro resultado a partir de novos dados.</p>
+
+```text
+Modelo treinado
+      +
+Novo dado
+      ↓
+  INFERÊNCIA
+      ↓
+   Resultado
+```
+
+### Exemplo
+
+```text
+Treinamento:
+10 milhões de imagens
+        ↓
+Modelo aprende
+
+Inferência:
+Nova imagem
+        ↓
+Modelo
+        ↓
+"É um cachorro"
+```
+
+> **DECORA:**  
+> **Training = aprender**  
+> **Inference = usar o que aprendeu**
+
+---
+
+<h3><strong style='color: skyblue'>1️⃣1️⃣ Viés — Bias</strong></h3>
+
+<p align="justify"><strong>Viés</strong> é uma tendência sistemática que pode fazer um modelo produzir resultados distorcidos ou menos precisos para determinados grupos, situações ou dados.</p>
+
+Pode surgir, por exemplo, quando:
+
+- Os dados de treinamento não representam adequadamente a população.
+- Determinado grupo está sub-representado.
+- Os dados históricos possuem padrões discriminatórios.
+- O processo de coleta dos dados possui limitações.
+
+> **DECORA:**  
+> **Dados enviesados → podem contribuir para resultados enviesados.**
+
+---
+
+<h3><strong style='color: skyblue'>1️⃣2️⃣ Imparcialidade — Fairness</strong></h3>
+
+<p align="justify"><strong>Fairness</strong> refere-se à busca por resultados justos e não discriminatórios nos sistemas de IA, considerando possíveis diferenças de desempenho entre grupos.</p>
+
+### Exemplo
+
+Se um modelo é utilizado para uma decisão automatizada, é importante verificar se ele apresenta diferenças injustificadas de desempenho entre diferentes grupos.
+
+```text
+Modelo
+  │
+  ├── Grupo A → desempenho
+  ├── Grupo B → desempenho
+  └── Grupo C → desempenho
+          ↓
+     Avaliar fairness
+```
+
+> **PEGADINHA:**  
+> **Bias = problema/tendência sistemática.**  
+> **Fairness = princípio/objetivo de resultados mais justos.**
+
+---
+
+<h3><strong style='color: skyblue'>1️⃣3️⃣ Ajuste — Fit</strong></h3>
+
+<p align="justify">No contexto de Machine Learning, <strong>fit</strong> descreve o quanto o modelo consegue representar os padrões presentes nos dados.</p>
+
+### Três conceitos importantes
+
+| Situação | Significado |
+|---|---|
+| **Underfitting** | Modelo simples demais; não aprende adequadamente os padrões |
+| **Good fit** | Modelo consegue representar os padrões de forma adequada |
+| **Overfitting** | Modelo aprende excessivamente os dados de treinamento e pode ter dificuldade com dados novos |
+
+```text
+Underfitting ───► Good Fit ───► Overfitting
+  aprende pouco       adequado       memoriza demais
+```
+
+> **DECORA:**  
+> **Overfitting = muito ajustado aos dados de treinamento → pode generalizar mal.**
+
+---
+
+<h3><strong style='color: skyblue'>1️⃣4️⃣ Large Language Model — LLM</strong></h3>
+
+<p align="justify">Um <strong>Large Language Model (LLM)</strong> é um modelo de linguagem de grande escala treinado com grandes quantidades de dados para processar e gerar linguagem.</p>
+
+### Exemplos de tarefas
+
+- Geração de texto.
+- Resumo.
+- Tradução.
+- Perguntas e respostas.
+- Classificação.
+- Geração de código.
+
+LLMs são uma das tecnologias utilizadas em aplicações de **IA generativa**.
+
+> **DECORA:**  
+> **LLM → modelo especializado em linguagem em grande escala.**
+
+---
+
+<h3><strong style='color: skyblue'>1️⃣5️⃣ IA Generativa — Generative AI</strong></h3>
+
+<p align="justify"><strong>IA generativa</strong> é uma categoria de IA capaz de <strong>criar novos conteúdos</strong> a partir de padrões aprendidos durante o treinamento.</p>
+
+Pode gerar:
+
+- 📝 Texto
+- 🖼️ Imagens
+- 🎵 Áudio
+- 🎥 Vídeo
+- 💻 Código
+
+```text
+Prompt / Entrada
+       ↓
+Modelo generativo
+       ↓
+Novo conteúdo
+```
+
+### 🧠 Relação com LLM
+
+```text
+IA
+│
+├── ML
+│   └── Deep Learning
+│
+└── IA Generativa
+      ├── LLMs → texto
+      ├── Modelos de imagem
+      ├── Modelos de áudio
+      └── Modelos multimodais
+```
+
+> **PEGADINHA:** IA generativa não significa apenas ChatGPT ou LLM. Ela pode gerar diferentes modalidades de conteúdo.
+
+---
+
+<h3><strong style='color: skyblue'>1️⃣6️⃣ IA Agêntica — Agentic AI</strong></h3>
+
+<p align="justify"><strong>IA agêntica</strong> refere-se a sistemas de IA capazes de realizar tarefas de forma mais <strong>autônoma e orientada a objetivos</strong>, podendo planejar etapas, utilizar ferramentas, tomar ações e adaptar o fluxo conforme os resultados.</p>
+
+### Modelo simplificado
+
+```text
+Objetivo
+   ↓
+IA Agêntica
+   ↓
+Planejar
+   ↓
+Usar ferramentas
+   ↓
+Executar ações
+   ↓
+Avaliar resultado
+   ↓
+Próxima ação
+```
+
+### Exemplo
+
+Um agente recebe:
+
+> "Analise as vendas do último mês e prepare um relatório."
+
+Pode, dependendo das ferramentas e permissões disponíveis:
+
+```text
+Consultar banco
+      ↓
+Analisar dados
+      ↓
+Gerar relatório
+      ↓
+Salvar arquivo
+      ↓
+Enviar relatório
+```
+
+> **DECORA:**  
+> **IA Generativa → cria conteúdo.**  
+> **IA Agêntica → busca atingir objetivos realizando ações.**
+
+---
+
+<h3><strong style='color: skyblue'>1️⃣7️⃣ IA × ML × Deep Learning × Generativa × Agêntica</strong></h3>
+
+| Conceito | Ideia principal |
+|---|---|
+| **IA** | Campo amplo para sistemas que executam tarefas inteligentes |
+| **ML** | Sistemas aprendem padrões a partir de dados |
+| **Deep Learning** | ML baseado principalmente em redes neurais profundas |
+| **IA Generativa** | Gera conteúdo novo |
+| **IA Agêntica** | Atua de forma mais autônoma para atingir objetivos |
+
+### 🧩 Relação conceitual
+
+```text
+                         IA
+                          │
+             ┌────────────┴────────────┐
+             │                         │
+            ML                  Outras técnicas
+             │
+      ┌──────┴──────┐
+      │             │
+Deep Learning     Outros ML
+      │
+      ├── Redes neurais
+      │
+      └── Base para muitos
+          modelos generativos
+
+
+IA Generativa
+      │
+      ├── Texto
+      ├── Imagem
+      ├── Áudio
+      └── Código
+
+IA Agêntica
+      │
+      ├── Objetivo
+      ├── Planejamento
+      ├── Ferramentas
+      ├── Ações
+      └── Autonomia
+```
+
+> **AZ-900/AWS:** Não trate essas categorias como sinônimos. Elas descrevem **conceitos diferentes que podem se sobrepor**.
+
+---
+
+<h3><strong style='color: skyblue'>1️⃣8️⃣ Tipos de inferência</strong></h3>
+
+<p align="justify">A inferência pode ser realizada de diferentes formas dependendo da necessidade de velocidade, volume, custo e interação da aplicação.</p>
+
+### 📦 Inferência em lote — Batch
+
+Processa uma grande quantidade de dados **de uma vez ou em lotes**, normalmente sem necessidade de resposta imediata.
+
+```text
+10 milhões de registros
+        ↓
+   Processamento
+        ↓
+     Resultados
+```
+
+### Exemplos
+
+- Processar vendas do dia.
+- Gerar relatórios noturnos.
+- Classificar milhares de documentos.
+
+> **DECORA:** **Batch = muito dado + não precisa ser imediato.**
+
+---
+
+### ⚡ Inferência em tempo real — Real-time
+
+Processa uma solicitação e retorna o resultado **rapidamente**, normalmente enquanto o usuário ou aplicação está esperando.
+
+```text
+Request
+   ↓
+Modelo
+   ↓
+Resposta
+```
+
+### Exemplos
+
+- Classificação de uma transação durante uma compra.
+- Chatbot.
+- Detecção de fraude durante uma operação.
+
+> **DECORA:** **Real-time = resposta rápida/online.**
+
+---
+
+### ⏳ Inferência assíncrona — Asynchronous
+
+<p align="justify">Na inferência assíncrona, o cliente envia uma solicitação, mas <strong>não precisa ficar esperando a resposta imediatamente</strong>. O processamento ocorre e o resultado fica disponível posteriormente.</p>
+
+```text
+Cliente
+   │
+   ├── Envia solicitação
+   │
+   ▼
+Processamento
+   │
+   ▼
+Resultado
+   │
+   ▼
+Cliente consulta/recebe depois
+```
+
+> **DECORA:** **Assíncrona = envia agora, resultado depois.**
+
+---
+
+### ☁️ Inferência sem servidor — Serverless
+
+<p align="justify">Inferência serverless utiliza infraestrutura gerenciada pelo provedor, permitindo executar a inferência sem administrar diretamente servidores.</p>
+
+```text
+Aplicação
+    ↓
+Serviço serverless
+    ↓
+Modelo
+    ↓
+Resultado
+```
+
+### Vantagens
+
+- Menos gerenciamento de infraestrutura.
+- Pode escalar conforme a demanda.
+- Pode ser adequado para cargas variáveis.
+- Modelo de cobrança pode ser baseado no uso, dependendo do serviço.
+
+> **PEGADINHA:**  
+> **Serverless NÃO significa "sem servidores".**  
+> Significa que o cliente **não gerencia diretamente os servidores**.
+
+---
+
+<h3><strong style='color: skyblue'>1️⃣9️⃣ Tipos de dados usados em IA</strong></h3>
+
+### 🏷️ Dados rotulados — Labeled
+
+<p align="justify">Dados que possuem uma resposta/label conhecida.</p>
+
+```text
+Imagem → "Gato"
+Imagem → "Cachorro"
+Imagem → "Gato"
+```
+
+São muito utilizados em **aprendizado supervisionado**.
+
+### ❓ Dados não rotulados — Unlabeled
+
+<p align="justify">Dados sem uma resposta/label previamente fornecida.</p>
+
+```text
+Imagem
+Imagem
+Imagem
+Imagem
+```
+
+Podem ser utilizados em técnicas de **aprendizado não supervisionado**.
+
+> **DECORA:**  
+> **Labeled = tem resposta conhecida.**  
+> **Unlabeled = não tem resposta conhecida.**
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣0️⃣ Dados tabulares</strong></h3>
+
+<p align="justify">Dados organizados em <strong>linhas e colunas</strong>, normalmente semelhantes a uma tabela ou banco de dados relacional.</p>
+
+```text
+ID | Idade | Renda | Compra
+---|-------|-------|-------
+01 |  25   | 3000  | Sim
+02 |  42   | 7000  | Não
+03 |  31   | 4500  | Sim
+```
+
+> **DECORA:** **Tabular = linhas + colunas.**
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣1️⃣ Dados de série temporal — Time Series</strong></h3>
+
+<p align="justify">Dados coletados ou organizados em função do <strong>tempo</strong>.</p>
+
+Exemplo:
+
+```text
+Hora       Temperatura
+08:00         22°C
+09:00         24°C
+10:00         26°C
+11:00         27°C
+```
+
+### Exemplos
+
+- Preço de ações.
+- Temperatura.
+- Consumo de energia.
+- Vendas ao longo do tempo.
+- Métricas de servidores.
+
+> **DECORA:** **Time Series = dados + tempo.**
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣2️⃣ Dados de imagem</strong></h3>
+
+<p align="justify">Dados visuais representados por imagens, normalmente processados por modelos de visão computacional.</p>
+
+Exemplos:
+
+- Fotografias.
+- Raios-X.
+- Imagens de satélite.
+- Câmeras de segurança.
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣3️⃣ Dados de texto</strong></h3>
+
+<p align="justify">Informações representadas por linguagem escrita.</p>
+
+Exemplos:
+
+- E-mails.
+- Documentos.
+- Mensagens.
+- Artigos.
+- Comentários.
+- Tickets de suporte.
+
+São importantes para tarefas de **NLP/PLN** e LLMs.
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣4️⃣ Dados estruturados × não estruturados</strong></h3>
+
+| Tipo | Característica | Exemplos |
+|---|---|---|
+| **Estruturado** | Formato definido e organizado | Tabelas, bancos relacionais |
+| **Não estruturado** | Não possui estrutura tabular rígida | Texto, imagem, áudio, vídeo |
+
+### 🧠 Exemplo
+
+```text
+ESTRUTURADO
+┌──────┬───────┬──────┐
+│ ID   │ Nome  │ Idade│
+├──────┼───────┼──────┤
+│ 001  │ Ana   │ 30   │
+└──────┴───────┴──────┘
+
+
+NÃO ESTRUTURADO
+📷 Imagem
+🎵 Áudio
+🎥 Vídeo
+📝 Documento
+```
+
+> **PEGADINHA:** Texto pode ser perfeitamente válido para ML/IA mesmo sendo **não estruturado**.
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣5️⃣ Tipos de aprendizado de IA/ML</strong></h3>
+
+Existem três categorias fundamentais que você precisa reconhecer:
+
+```text
+              APRENDIZADO DE ML
+                     │
+       ┌─────────────┼─────────────┐
+       │             │             │
+Supervisionado  Não supervisionado  Reforço
+       │             │             │
+   Labels        Sem labels        Recompensa
+```
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣6️⃣ Aprendizado supervisionado</strong></h3>
+
+<p align="justify">No <strong>aprendizado supervisionado</strong>, o modelo é treinado com dados que possuem <strong>rótulos/labels conhecidos</strong>.</p>
+
+```text
+Dados + Respostas
+       ↓
+  Treinamento
+       ↓
+    Modelo
+       ↓
+Nova entrada
+       ↓
+   Previsão
+```
+
+### Exemplos
+
+**Classificação:**
+
+```text
+E-mail → Spam / Não Spam
+```
+
+**Regressão:**
+
+```text
+Características da casa
+        ↓
+Modelo
+        ↓
+Preço estimado
+```
+
+### 🔑 Tarefas comuns
+
+- Classificação.
+- Regressão.
+
+> **DECORA:** **Supervisionado = tem professor/label.**
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣7️⃣ Aprendizado não supervisionado</strong></h3>
+
+<p align="justify">No <strong>aprendizado não supervisionado</strong>, o modelo recebe dados <strong>sem labels conhecidos</strong> e procura padrões, estruturas ou agrupamentos.</p>
+
+### Exemplo
+
+Uma empresa possui clientes e quer descobrir grupos com comportamentos semelhantes.
+
+```text
+Clientes
+   ↓
+Modelo
+   ↓
+┌────────┐
+│ Grupo A │
+├────────┤
+│ Grupo B │
+├────────┤
+│ Grupo C │
+└────────┘
+```
+
+Uma técnica comum é **clustering (agrupamento)**.
+
+> **DECORA:** **Não supervisionado = procura padrões sem resposta pronta.**
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣8️⃣ Aprendizado por reforço — Reinforcement Learning</strong></h3>
+
+<p align="justify">No <strong>aprendizado por reforço</strong>, um agente aprende a tomar ações interagindo com um ambiente e recebendo <strong>recompensas ou penalidades</strong>.</p>
+
+```text
+       Ambiente
+          ↑
+          │
+       Ação
+          │
+        Agente
+          │
+          ▼
+      Recompensa
+          │
+          ▼
+   Aprende estratégia
+```
+
+### Exemplo
+
+Um agente precisa aprender a jogar um jogo:
+
+```text
+Ação correta
+    ↓
++10 pontos
+
+Ação ruim
+    ↓
+-5 pontos
+```
+
+Ao longo das interações, o agente aprende uma estratégia para maximizar a recompensa.
+
+> **DECORA:**  
+> **Reforço = agente + ambiente + ações + recompensa/penalidade.**
+
+---
+
+<h3><strong style='color: skyblue'>2️⃣9️⃣ Comparação dos tipos de aprendizado</strong></h3>
+
+| Tipo | Dados | Como aprende | Exemplo |
+|---|---|---|---|
+| **Supervisionado** | Rotulados | Aprende com respostas conhecidas | Classificar spam |
+| **Não supervisionado** | Não rotulados | Encontra padrões | Agrupar clientes |
+| **Reforço** | Interação com ambiente | Aprende por recompensas/penalidades | Agente aprendendo estratégia |
+
+### 🧠 Regra rápida
+
+```text
+TEM LABEL?
+   │
+   ├── SIM → SUPERVISIONADO
+   │
+   └── NÃO
+       │
+       ├── Procurar padrões → NÃO SUPERVISIONADO
+       │
+       └── Interagir + recompensa → REFORÇO
+```
+
+---
+
+<h3><strong style='color: skyblue'>🔥 DECORAÇÃO FINAL — O essencial para a prova</strong></h3>
+
+> **IA → campo amplo de sistemas inteligentes**
+
+> **ML → aprende padrões a partir de dados**
+
+> **Deep Learning → ML com redes neurais profundas**
+
+> **Computer Vision → imagens e vídeos**
+
+> **NLP/PLN → linguagem**
+
+> **Modelo → aprendeu padrões e pode produzir resultados**
+
+> **Algoritmo → método/procedimento**
+
+> **Training → aprender**
+
+> **Inference → usar o modelo treinado**
+
+> **Bias → tendência sistemática que pode distorcer resultados**
+
+> **Fairness → busca por resultados justos**
+
+> **Fit → grau de ajuste do modelo aos dados**
+
+> **LLM → grande modelo de linguagem**
+
+> **IA Generativa → cria conteúdo**
+
+> **IA Agêntica → busca objetivos com maior autonomia, planejamento e ações**
+
+> **Batch → processa em lotes**
+
+> **Real-time → resposta rápida/online**
+
+> **Async → processa e entrega depois**
+
+> **Serverless → não gerencia diretamente os servidores**
+
+> **Labeled → possui resposta/label**
+
+> **Unlabeled → não possui label**
+
+> **Tabular → linhas + colunas**
+
+> **Time Series → dados relacionados ao tempo**
+
+> **Structured → estrutura definida**
+
+> **Unstructured → texto, imagem, áudio, vídeo etc.**
+
+> **Supervised → dados rotulados**
+
+> **Unsupervised → encontra padrões sem labels**
+
+> **Reinforcement → recompensa/penalidade**
+
+### 🎯 PEGADINHAS CLÁSSICAS
+
+| Se a questão falar em... | Pense em... |
+|---|---|
+| "Aprender com exemplos que possuem resposta" | **Supervisionado** |
+| "Agrupar clientes semelhantes" | **Não supervisionado** |
+| "Agente recebe recompensa" | **Reforço** |
+| "Prever preço" | **Regressão** |
+| "Spam ou não spam" | **Classificação** |
+| "Descobrir grupos" | **Clustering** |
+| "Imagem/vídeo" | **Computer Vision** |
+| "Texto/linguagem" | **NLP/LLM** |
+| "Criar texto/imagem/código" | **IA Generativa** |
+| "Planejar e executar ações usando ferramentas" | **IA Agêntica** |
+| "Milhões de registros processados juntos" | **Batch inference** |
+| "Resposta imediata para uma requisição" | **Real-time inference** |
+| "Resultado será entregue posteriormente" | **Async inference** |
+| "Sem administrar servidores" | **Serverless** |
+| "Tem label" | **Supervisionado** |
+| "Não tem label" | **Não supervisionado** |
+| "Aprende por recompensa" | **Reforço** |
+
+### 🧩 MAPA MENTAL GERAL
+
+<pre>
+                         🤖 IA
+                          │
+             ┌────────────┴────────────┐
+             │                         │
+            ML                    IA GENERATIVA
+             │                         │
+       ┌─────┴─────┐              ┌────┴────┐
+       │           │              Texto   Imagem
+   Deep Learning   │                │
+       │           │               LLM
+   Redes Neurais   │
+                   │
+       ┌───────────┼───────────────┐
+       │           │               │
+ Supervisionado  Não Sup.       Reforço
+       │           │               │
+    Labels      Padrões       Recompensa
+       │           │               │
+ Classificação  Clustering       Agente
+
+
+                    DADOS
+                      │
+       ┌──────────────┼──────────────┐
+       │              │              │
+  Estruturados   Não estruturados  Séries
+       │              │            temporais
+     Tabelas      Texto/Imagem
+                  Áudio/Vídeo
+
+
+                   MODELO
+                     │
+             ┌───────┴───────┐
+             │               │
+         Training         Inference
+             │               │
+          Aprende          Usa
+             │               │
+          Dados ───────► Resultado
+</pre>
