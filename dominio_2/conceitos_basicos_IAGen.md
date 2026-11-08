@@ -633,7 +633,7 @@ IMPLANTAÇÃO
 FEEDBACK
        ↺
 ```
-
+</pre>
 ---
 
 <h3><strong style='color: skyblue'>📥 Seleção de dados</strong></h3>
