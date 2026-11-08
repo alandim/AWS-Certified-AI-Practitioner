@@ -1,5 +1,3 @@
-# 🧩 AWS Certified AI Practitioner — Tarefa 2.1
-
 ## Explicar os conceitos básicos de IA generativa
 
 <p align="justify">Esta tarefa aborda os fundamentos da IA generativa (GenAI), os conceitos utilizados pelos modelos de base (Foundation Models), suas aplicações, o ciclo de vida desses modelos, a cobrança por tokens, a engenharia de contexto e os fundamentos da IA agêntica.</p>
