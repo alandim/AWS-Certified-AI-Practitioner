@@ -1,4 +1,4 @@
-## 🧠 AWS AI Practitioner — Tarefa 3.3: Descrever o processo de treinamento e ajuste fino dos FMs
+## Declaração de tarefa 3.3: Descrever o processo de treinamento e ajuste fino dos FMs
 
 ### 1️⃣ Principais elementos do treinamento de um FM
 
