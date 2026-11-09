@@ -1,4 +1,4 @@
-## 🧠 AWS AI Practitioner — Tarefa 3.2: Escolher técnicas eficazes de engenharia de prompts
+## Declaração de tarefa 3.2: Escolher técnicas eficazes de engenharia de prompts
 
 ### 1️⃣ Conceitos e componentes da engenharia de prompts
 
